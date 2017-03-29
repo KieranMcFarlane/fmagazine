@@ -10,3 +10,14 @@
  */
 
 /* Copy any classes from parent and paste here. It will override the parent's version. */
+
+
+// .owl-item:not(.center){ display: none; }
+
+.owl-item.cloned{
+	opacity: 0;
+}
+
+.owl-prev, .owl-next{
+	display: none;
+}

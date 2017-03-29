@@ -19,10 +19,11 @@ function authentic_child_assets() {
   if ( ! is_admin() ) {
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('authentic_child_css', trailingslashit( get_stylesheet_directory_uri() ) . 'style.css', array(), $version, 'all');
+    wp_enqueue_script('authentic_child_js', trailingslashit( get_stylesheet_directory_uri() ) . '/js/authentic-child-main.js', array(), $version, 'all');
+
   }
 }
 
 /**
  * Copy any function from parent and paste here. It will override the parent's version.
  */
-
